@@ -42,51 +42,8 @@
           </li>
 
           <!--        iniciar sesion-->
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown"><b>Iniciar sesion</b> <span class="caret"></span></a>
-            <ul id="login-dp" class="dropdown-menu">
-              <li>
-                <div class="row">
-                  <div class="col-md-12">
-
-                    Inicia con :
-                    <div id="social-botones">
-                      <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i></a>
-                      <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i></a>
-                      <a href="#" class="btn btn-gg"><i class="fa fa-google-plus"></i></a>
-                    </div>
-                    
-                    <form class="form" role="form" method="post" accept-charset="UTF-8" id="login-nav">
-
-                      <div class="form-group ">
-                        <label class="sr-only " for="correo">Correo</label>
-                        <input type="email" class="form-control" id="correo" placeholder="Ingresa Correo" required>
-                      </div>
-
-                      <div class="form-group">
-                        <label class="sr-only" for="pass">Contraseña</label>
-                        <input type="password" class="form-control" id="pass" placeholder="Ingresa Contraseña" required>
-
-                        <div class="help-block text-right"><a href="" id="text-social">Olvidaste Tu Contraseña ?</a></div>
-                      </div>
-
-                      <div class="form-group">
-                        <a href="<?php echo $fsConfig->getUrl() ?>index.php/usuariosPortal/usuIndex">Iniciar sesion</a>
-                      </div>
-
-                      <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> Recuerdame
-                        </label>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="bottom text-center">
-                    Nuevo Aqui ? <a href="<?php echo $fsConfig->getUrl() ?>index.php/panel/panel"><b>Registrate</b></a>
-                  </div>
-                </div>
-              </li>
-            </ul>
+          <li>
+            <a href="<?php echo $fsConfig->getUrl() ?>index.php/seguridad/iniciar">Iniciar Sesion</a>
           </li>
       </div>
   </div>
@@ -176,7 +133,7 @@ Contenedor Slider
 
         <div class="contenedor-botones">
           <a href="<?php echo $fsConfig->getUrl() ?>index.php/categoria/restaurantes" class="btn btn-primary">Leer Mas</a>
-          
+
         </div>
       </article>
 
@@ -192,7 +149,7 @@ Contenedor Slider
 
         <div class="contenedor-botones">
           <a href="<?php echo $fsConfig->getUrl() ?>index.php/categoria/fincasCampestres" class="btn btn-primary">Leer Mas</a>
-          
+
         </div>
       </article>
 
@@ -207,8 +164,8 @@ Contenedor Slider
         </p>
 
         <div class="contenedor-botones">
-          <a href="<?php echo $fsConfig->getUrl()  ?>index.php/categoria/balnearios" class="btn btn-primary">Leer Mas</a>
-          
+          <a href="<?php echo $fsConfig->getUrl() ?>index.php/categoria/balnearios" class="btn btn-primary">Leer Mas</a>
+
         </div>
       </article>
 
@@ -229,10 +186,10 @@ Contenedor Slider
           nuestra <strong>Guadalajara de Buga</strong>.
         </p>
 
-<!--        <div class="contenedor-botones">
-          <a href="#" class="btn btn-primary">Leer Mas</a>
-          <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
-        </div>-->
+        <!--        <div class="contenedor-botones">
+                  <a href="#" class="btn btn-primary">Leer Mas</a>
+                  <a href="#" class="btn btn-success">Comentarios <span class="badge">20</span></a>
+                </div>-->
       </article>
     </section>
 

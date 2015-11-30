@@ -4,8 +4,8 @@ use FStudio\myConfig as config;
 
 $config = new config();
 
-$config->setPath('C:/xampp/htdocs/portalFinal/');
-$config->setUrl('http://localhost/portalFinal/web/');
+$config->setPath('C:/xampp/htdocs/portalWebUltimo/');
+$config->setUrl('http://localhost/portalWebUltimo/web/');
 
 $config->setDriver('mysql');
 $config->setHost('localhost');
