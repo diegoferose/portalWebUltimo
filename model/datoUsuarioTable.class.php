@@ -1,11 +1,11 @@
 <?php
-use portalFinal\model\base\usuarioBaseTable;
+use portalFinal\model\base\datoUsuarioBaseTable;
 /**
- * Description of usuarioTable
+ * Description of datoUsuarioTable
  *
  * @author luis david sicua 
  */
-class usuarioTable extends usuarioBaseTable {
+class datoUsuarioTable extends datoUsuarioBaseTable {
   public function getAll() {
     $conn = $this->getConnection($this->config);
     $sql = 'SELECT dus_id, usu_id, dus_nombre, dus_apellido, dus_correo, dus_genero, dus_fecha_nacimiento, dus_facebook, dus_twitter, dus_google_plus, dus_avatar, dus_create_at, dus_updated_at, dus_deleted_at FROM bdp_dato_usuario';
@@ -13,11 +13,11 @@ class usuarioTable extends usuarioBaseTable {
     $answer->execute();
     return ($answer->rowCount() > 0) ? $answer->fetchAll(PDO::FETCH_OBJ) : false;
   }
-  public function getById($id) {
+  public function getById($id = null) {
     $conn = $this->getConnection($this->config);
     $sql = 'SELECT dus_id, usu_id, dus_nombre, dus_apellido, dus_correo, dus_genero, dus_fecha_nacimiento, dus_facebook, dus_twitter, dus_google_plus, dus_avatar, dus_create_at, dus_updated_at, dus_deleted_at FROM bdp_dato_usuario WHERE dus_id = :id';
     $params = array(
-        ':id' => $id
+        ':id' => ($id !== null)
     );
     $answer = $conn->prepare($sql);
     $answer->execute($params);

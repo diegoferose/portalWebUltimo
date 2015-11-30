@@ -1,12 +1,12 @@
 <?php
-use portalFinal\model\base\usuarioBaseTable;
+use portalFinal\model\base\sitioBaseTable;
 /**
- * Description of usuarioTable
+ * Description of sitioTable
  *
- * @author luis david sicua 
+ * @author lPIPENKI
  */
-class usuarioTable extends usuarioBaseTable {
-  public function getAll() {
+class sitioTable extends sitioBaseTable{
+public function getAll() {
     $conn = $this->getConnection($this->config);
     $sql = 'SELECT dus_id, usu_id, dus_nombre, dus_apellido, dus_correo, dus_genero, dus_fecha_nacimiento, dus_facebook, dus_twitter, dus_google_plus, dus_avatar, dus_create_at, dus_updated_at, dus_deleted_at FROM bdp_dato_usuario';
     $answer = $conn->prepare($sql);

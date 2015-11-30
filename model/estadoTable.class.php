@@ -1,12 +1,12 @@
 <?php
-use portalFinal\model\base\usuarioBaseTable;
+use portalBuga2\model\base\estadoBaseTable;
 /**
- * Description of usuarioTable
+ * Description of estadoTable
  *
- * @author luis david sicua 
+ * @author PIPENKI
  */
-class usuarioTable extends usuarioBaseTable {
-  public function getAll() {
+class estadoTable extends estadoBaseTable{
+public function getAll() {
     $conn = $this->getConnection($this->config);
     $sql = 'SELECT dus_id, usu_id, dus_nombre, dus_apellido, dus_correo, dus_genero, dus_fecha_nacimiento, dus_facebook, dus_twitter, dus_google_plus, dus_avatar, dus_create_at, dus_updated_at, dus_deleted_at FROM bdp_dato_usuario';
     $answer = $conn->prepare($sql);
