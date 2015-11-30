@@ -1,13 +1,17 @@
 <?php
+use FStudio\fsController as controller;
+use FStudio\interfaces\fsAction as action;
 /**
  * Description of indexControllerClass
  *
- * @author Luis david sicua <xwhisper_dim@outlook.com>
+ * @author felipe gonzalez
  */
-class usuSitios extends controllerClass {
-  
-  static public function main() {
-    
-    viewClass::definirVista('categoria', 'usuSitios', null, 'html');
+
+class usuSitios extends controller implements action {
+
+  public function execute() {
+
+    $this->defineView('usuariosPortal', 'usuSitios', 'html');
   }
+
 }

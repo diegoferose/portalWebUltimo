@@ -1,14 +1,18 @@
 <?php
 
+use FStudio\fsController as controller;
+use FStudio\interfaces\fsAction as action;
 /**
- * Description of itinerario
+ * Description of indexControllerClass
  *
- * @author Luis david sicua <xwhisper_dim@outlook.com>
+ * @author felipe gonzalez
  */
-class itinerario extends controllerClass {
-  
-  static public function main() {
-    
-    viewClass::definirVista('usuariosPortal', 'itinerario', null, 'html');
+
+class itinerario extends controller implements action {
+
+  public function execute() {
+
+    $this->defineView('usuariosPortal', 'itinerario', 'html');
   }
+
 }

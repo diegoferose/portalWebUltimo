@@ -1,13 +1,18 @@
 <?php
+
+use FStudio\fsController as controller;
+use FStudio\interfaces\fsAction as action;
 /**
  * Description of indexControllerClass
  *
- * @author David
+ * @author Luis david sicua <xwhisper_dim@outlook.com>
  */
-class nuevo extends controllerClass {
-  
-  static public function main() {
-    
-    viewClass::definirVista('portal', 'nuevo', null, 'html');
+
+class nuevo extends controller implements action {
+
+  public function execute() {
+
+    $this->defineView('portal', 'nuevo', 'html');
   }
+
 }
