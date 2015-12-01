@@ -1,5 +1,5 @@
 <?php
-use portalWebUltimo\model\base\usuarioBaseTable;
+use FStudio\model\base\usuarioBaseTable;
 /**
  * Description of usuarioTable
  *
@@ -22,6 +22,17 @@ class usuarioTable extends usuarioBaseTable {
     $answer = $conn->prepare($sql);
     $answer->execute($params);
     return ($answer->rowCount() > 0) ? $answer->fetchAll(PDO::FETCH_OBJ) : false;
+  }
+  public function comparar($user,$pass) {
+    $conn = $this->getConnection($this->config);
+    $sql = 'SELECT usu_usuario FROM bdp_usuario WHERE usu_usuario=:user and usu_password=:pass';
+    $params = array(
+        ':user' => $user,
+        ':pass'=> $pass
+    );
+    $answer = $conn->prepare($sql);
+    $answer->execute($params);
+    return ($answer->rowCount() > 0) ? true : false;
   }
   public function save() {
     $conn = $this->getConnection($this->config);

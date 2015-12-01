@@ -10,6 +10,13 @@ use FStudio\interfaces\fsAction as action;
 class iniciar extends controller implements action {
 
   public function execute() {
+      $config = $this->getConfig();
+       if (isset($_SESSION['user']) === true) {
+      header("Location: $index");
+      exit();
+    } else {
+        
+    }
 
     $this->defineView('seguridad', 'iniciar', 'html');
   }
