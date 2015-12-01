@@ -11,7 +11,7 @@ $config->setDriver('mysql');
 $config->setHost('localhost');
 $config->setPort(3306);
 $config->setDbName('tpsbuga');
-$config->setUser('');
+$config->setUser('root');
 $config->setPassword(null);
 $config->setDsn(
         $config->getDriver()

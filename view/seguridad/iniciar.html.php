@@ -29,6 +29,11 @@
 					</div>
 				</div>
 			</fieldset>
+          <?php if (isset($_SESSION['registroSuccess']) === true): ?>
+          <br>
+          <div class="alert alert-success" role="alert"><?php echo $_SESSION['registroSuccess']?></div>
+          <?php unset($_SESSION['registroSuccess'])?>
+          <?php endif;?>
 		</form>
 	</div>
 </div>
