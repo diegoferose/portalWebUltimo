@@ -1,9 +1,9 @@
 <?php
-use portalFinal\model\base\usuarioBaseTable;
+use portalWebUltimo\model\base\usuarioBaseTable;
 /**
  * Description of usuarioTable
  *
- * @author luis david sicua 
+ * @author JuanGabo
  */
 class usuarioTable extends usuarioBaseTable {
   public function getAll() {

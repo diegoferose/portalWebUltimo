@@ -1,14 +1,14 @@
 <?php
 
-namespace portalFinal\model\base;
+namespace portalWebUltimo\model\base;
 
-use portalFinal\fsModel as model;
-use portalFinal\myConfig as config;
+use portalWebUltimo\fsModel as model;
+use portalWebUltimo\myConfig as config;
 
 /**
  * Description of rolBaseTable
  *
- * @author luis david sicua
+ * @author JuanGabo
  */
 class rolBaseTable extends model {
 

@@ -1,9 +1,9 @@
 <?php
-use portalFinal\model\base\sitioBaseTable;
+use portalWebUltimo\model\base\sitioBaseTable;
 /**
  * Description of sitioTable
  *
- * @author lPIPENKI
+ * @author JuanGabo
  */
 class sitioTable extends sitioBaseTable{
 public function getAll() {

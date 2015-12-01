@@ -1,9 +1,9 @@
 <?php
-use portalFinal\model\base\estadoBaseTable;
+use portalWebUltimo\model\base\estadoBaseTable;
 /**
  * Description of pqrsTable
  *
- * @author PIPENKI
+ * @author JuanGabo
  */
 class pqrsTable extends pqrsBaseTable{
 public function getAll() {

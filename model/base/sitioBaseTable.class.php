@@ -1,14 +1,14 @@
 <?php
 
-namespace portalBuga2\model\base;
+namespace portalWebUltimo\model\base;
 
-use portalFinal\fsModel as model;
-use portalFinal\myConfig as config;
+use portalWebUltimo\fsModel as model;
+use portalWebUltimo\myConfig as config;
 
 /**
  * Description of sitioBaseTable
  *
- * @author PIPENKI
+ * @author JuanGabo
  */
 class sitioBaseTable extends model {
 

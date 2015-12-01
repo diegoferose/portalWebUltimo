@@ -1,9 +1,9 @@
 <?php
-use portalFinal\model\base\rolBaseTable;
+use portalWebUltimo\model\base\rolBaseTable;
 /**
  * Description of rolTable
  *
- * @author luis david sicua 
+ * @author JuanGabo
  */
 class rolTable extends rolBaseTable {
 

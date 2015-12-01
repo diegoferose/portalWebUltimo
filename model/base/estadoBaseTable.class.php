@@ -1,11 +1,12 @@
 <?php
-namespace portalBuga2\model\base;
-use portalFinal\fsModel as model;
-use portalFinal\myConfig as config;
+namespace portalWebUltimo\model\base;
+
+use portalWebUltimo\fsModel as model;
+use portalWebUltimo\myConfig as config;
 /**
  * Description of estadoBaseTable
  *
- * @author PIPENKI
+ * @author JuanGabo
  */
 class estadoBaseTable extends model{
   const EST_ID = 'est_id';

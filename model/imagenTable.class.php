@@ -1,9 +1,9 @@
 <?php
-use portalFinal\model\base\imagenBaseTable;
+use portalWebUltimo\model\base\imagenBaseTable;
 /**
  * Description of imagenTable
  *
- * @author luis david sicua
+ * @author JuanGabo
  */
 class imagenTable extends imagenBaseTable{
 public function getAll() {

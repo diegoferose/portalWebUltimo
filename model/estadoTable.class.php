@@ -1,9 +1,9 @@
 <?php
-use portalBuga2\model\base\estadoBaseTable;
+use portalWebUltimo\model\base\estadoBaseTable;
 /**
  * Description of estadoTable
  *
- * @author PIPENKI
+ * @author JuanGabo
  */
 class estadoTable extends estadoBaseTable{
 public function getAll() {
