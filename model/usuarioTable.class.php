@@ -43,7 +43,7 @@ class usuarioTable extends usuarioBaseTable {
     $sql = 'SELECT usu_usuario FROM bdp_usuario WHERE usu_usuario=:user and usu_password=:pass';
     $params = array(
         ':user' => $user,
-        ':pass' => $pass
+        ':pass' => md5($pass)
     );
     $answer = $conn->prepare($sql);
     $answer->execute($params);
