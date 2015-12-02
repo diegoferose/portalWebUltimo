@@ -8,108 +8,107 @@ use FStudio\myConfig as config;
 /**
  * Description of usuarioBaseTable
  *
- * @author JuanGabo
+ * @author luis david sicua
  */
 class usuarioBaseTable extends model {
 
-  const USU_ID = 'usu_id';
-  const USU_USUARIO = 'usu_usuario';
-  const USU_PASSWORD = 'usu_password';
-  const USU_ACTIVADO = 'usu_activado';
+  const ID = 'usu_id';
+  const USUARIO = 'usu_usuario';
+  const PASSWORD = 'usu_password';
+  const ACTIVO = 'usu_activo';
   const ROL_ID = 'rol_id';
-  const USU_CREATED_AT = 'usu_created_at';
-  const USU_UPDATED_AT = 'usu_updated_at';
-  const USU_DELETED_AT = 'usu_deleted_at';
+  const CREATED_AT = 'usu_created_at';
+  const UPDATED_AT = 'usu_updated_at';
+  const DELETED_AT = 'usu_deleted_at';
 
   /**
    * Configuración del sistema
    * @var config
    */
-  
   protected $config;
-  private $usu_id;
-  private $usu_usuario;
-  private $usu_password;
-  private $usu_activado;
+  private $id;
+  private $usuario;
+  private $password;
+  private $activo;
   private $rol_id;
-  private $usu_created_at;
-  private $usu_updated_at;
-  private $usu_deleted_at;
+  private $created_at;
+  private $updated_at;
+  private $deleted_at;
 
-  public function __construct(config $config, $usu_id = null, $usu_usuario = null, $usu_password = null, $usu_activado = null, $rol_id = null, $usu_created_at = null, $usu_updated_at = null, $usu_deleted_at = null) {
+  public function __construct(config $config, $id = null, $usuario = null, $password = null, $activo = '1', $rol_id = null, $created_at = null, $updated_at = null, $deleted_at = null) {
     $this->config = $config;
-    $this->usu_id = $usu_id;
-    $this->usu_usuario = $usu_usuario;
-    $this->usu_password = $usu_password;
-    $this->usu_activado = $usu_activado;
+    $this->id = $id;
+    $this->usuario = $usuario;
+    $this->password = $password;
+    $this->activado = $activo;
     $this->rol_id = $rol_id;
-    $this->usu_created_at = $usu_created_at;
-    $this->usu_updated_at = $usu_updated_at;
-    $this->usu_deleted_at = $usu_deleted_at;
-  }
-  public function getUsu_id() {
-    return $this->usu_id;
+    $this->created_at = $created_at;
+    $this->updated_at = $updated_at;
+    $this->deleted_at = $deleted_at;
   }
 
-  public function getUsu_usuario() {
-    return $this->usu_usuario;
+  public function getId() {
+    return $this->id;
   }
 
-  public function getUsu_password() {
-    return $this->usu_password;
+  public function getUsuario() {
+    return $this->usuario;
   }
 
-  public function getUsu_activado() {
-    return $this->usu_activado;
+  public function getPassword() {
+    return $this->password;
   }
 
-  public function getRol_id() {
+  public function getActivo() {
+    return $this->activo;
+  }
+
+  public function getRolId() {
     return $this->rol_id;
   }
 
-  public function getUsu_created_at() {
-    return $this->usu_created_at;
+  public function getCreatedAt() {
+    return $this->created_at;
   }
 
-  public function getUsu_updated_at() {
-    return $this->usu_updated_at;
+  public function getUpdatedAt() {
+    return $this->updated_at;
   }
 
-  public function getUsu_deleted_at() {
-    return $this->usu_deleted_at;
+  public function getDeletedAt() {
+    return $this->deleted_at;
   }
 
-  public function setUsu_id($usu_id) {
-    $this->usu_id = $usu_id;
+  public function setId($id) {
+    $this->id = $id;
   }
 
-  public function setUsu_usuario($usu_usuario) {
-    $this->usu_usuario = $usu_usuario;
+  public function setUsuario($usuario) {
+    $this->usuario = $usuario;
   }
 
-  public function setUsu_password($usu_password) {
-    $this->usu_password = $usu_password;
+  public function setPassword($password) {
+    $this->password = hash('md5', $password);
   }
 
-  public function setUsu_activado($usu_activado) {
-    $this->usu_activado = $usu_activado;
+  public function setActivo($activo) {
+    $this->activado = $activo;
   }
 
-  public function setRol_id($rol_id) {
+  public function setRolId($rol_id) {
     $this->rol_id = $rol_id;
   }
 
-  public function setUsu_created_at($usu_created_at) {
-    $this->usu_created_at = $usu_created_at;
+  public function setCreatedAt($created_at) {
+    $this->created_at = $created_at;
   }
 
-  public function setUsu_updated_at($usu_updated_at) {
-    $this->usu_updated_at = $usu_updated_at;
+  public function setUpdatedAt($updated_at) {
+    $this->updated_at = $updated_at;
   }
 
-  public function setUsu_deleted_at($usu_deleted_at) {
-    $this->usu_deleted_at = $usu_deleted_at;
+  public function setDeletedAt($deleted_at) {
+    $this->deleted_at = $deleted_at;
   }
-
 
 }
