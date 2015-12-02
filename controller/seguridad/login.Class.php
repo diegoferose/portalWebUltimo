@@ -20,8 +20,12 @@ class login extends controller implements action {
              $usuario = new usuarioTable($config);
              
              if($usuario->comparar($user, $pass)){
-                 echo 'si existe';
+                 $this->defineView('usuariosPortal', 'usuIndex', 'html');
              }
+             else{
+                  $this->defineView('seguridad', 'iniciar', 'html');
+             }
+             
              
          }
 }
