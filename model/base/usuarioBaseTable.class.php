@@ -1,9 +1,9 @@
 <?php
 
-namespace portalWebUltimo\model\base;
+namespace FStudio\model\base;
 
-use portalWebUltimo\fsModel as model;
-use portalWebUltimo\myConfig as config;
+use FStudio\fsModel as model;
+use FStudio\myConfig as config;
 
 /**
  * Description of usuarioBaseTable

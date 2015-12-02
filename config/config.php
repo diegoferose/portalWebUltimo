@@ -10,7 +10,7 @@ $config->setUrl('http://localhost/portalWebUltimo/web/');
 $config->setDriver('mysql');
 $config->setHost('localhost');
 $config->setPort(3306);
-$config->setDbName('tpsbuga');
+$config->setDbName('portalwebturismobuga');
 $config->setUser('root');
 $config->setPassword(null);
 $config->setDsn(
