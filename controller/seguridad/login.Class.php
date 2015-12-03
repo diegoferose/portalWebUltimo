@@ -20,7 +20,9 @@ class login extends controller implements action {
              $usuario = new usuarioTable($config);
              
              if($usuario->comparar($user, $pass)){
+                 
                  $this->defineView('usuariosPortal', 'usuIndex', 'html');
+                 $_SESSION['usuario']= $user;
              }
              else{
                   $this->defineView('seguridad', 'iniciar', 'html');

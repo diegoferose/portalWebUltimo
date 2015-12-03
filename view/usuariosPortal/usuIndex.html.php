@@ -41,7 +41,7 @@
    <a class="page-scroll" href="<?php echo $fsConfig->getUrl() ?>index.php/panel/panel">Panel De Control</a>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown"><b>Hello </b> <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown"><b>Hello <?php echo $_SESSION['usuario']; ?> </b> <span class="caret"></span></a>
           <ul id="login-dp" class="dropdown-menu">
             <li>
               <div class="row">
