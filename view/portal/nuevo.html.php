@@ -55,7 +55,7 @@
         <hr class="colorgraph">
         <div class="row">
           <div class="col-xs-12 col-md-6"><input type="submit" value="Registrar" class="btn btn-primary btn-block btn-lg" tabindex="7"></div>
-          <div class="col-xs-12 col-md-6"><a href="#" class="btn btn-success btn-block btn-lg">Iniciar sesion</a></div>
+          <div class="col-xs-12 col-md-6"><a href=" <?php echo $fsConfig->getUrl() ?>index.php/seguridad/iniciar" class="btn btn-success btn-block btn-lg">Iniciar sesion</a></div>
         </div>
       </form>
     </div>
