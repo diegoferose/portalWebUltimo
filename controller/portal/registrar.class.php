@@ -17,7 +17,7 @@ class registrar extends controller implements action {
 
   public function execute() {
     $config = $this->getConfig();
-    $index = $config->getUrl() . 'index.php';
+    $index = $config->getUrl() . 'index.php/seguridad/iniciar';
 
     if (isset($_SESSION['user']) === true) {
       header("Location: $index");
