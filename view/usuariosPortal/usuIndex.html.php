@@ -37,23 +37,23 @@
             <a class="page-scroll" href="<?php echo $fsConfig->getUrl() ?>index.php/categoria/categorias">Categorias</a>
           </li>
 
-<li>
-   <a class="page-scroll" href="<?php echo $fsConfig->getUrl() ?>index.php/panel/panel">Panel De Control</a>
-        </li>
-        <li class="dropdown">
+          <li>
+            <a class="page-scroll" href="<?php echo $fsConfig->getUrl() ?>index.php/panel/panel">Panel De Control</a>
+          </li>
+          <li class="dropdown">
             <a href="#" class="dropdown-toggle page-scroll" data-toggle="dropdown"><b>Hello <?php echo $_SESSION['usuario']; ?> </b> <span class="caret"></span></a>
-          <ul id="login-dp" class="dropdown-menu">
-            <li>
-              <div class="row">
-                <div class="col-md-12">
+            <ul id="login-dp" class="dropdown-menu">
+              <li>
+                <div class="row">
+                  <div class="col-md-12">
 
-                  <div class="bottom text-center">
-                    Hola deseas <a href="#" id="text-social"><b>Configurar</b></a>
+                    <div class="bottom text-center">
+                      <a href="<?php echo $fsConfig->getUrl() ?>index.php/seguridad/cerrar" id="text-social"><b>cerrar sesion</b></a>
+                    </div>
                   </div>
-                </div>
-            </li>
-          </ul>
-        </li>
+              </li>
+            </ul>
+          </li>
       </div>
   </div>
 </nav>
